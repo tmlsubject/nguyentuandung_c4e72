@@ -1,0 +1,22 @@
+<html>
+<meta charset="UTF-8">
+<script language="javascript"> 
+function check(){
+if (myform.tuoi.value>=18) document.write(" Tuổi của bạn hợp lệ, " + myform.name.value);
+if (myform.chieucao.value>180) document.write("tuoi cac bang tao"+myform.name.value);
+else alert("bạn chưa đủ tuổi ")
+}
+</script>
+<body>
+<form name="myform">
+<H2> Nhập tên của bạn </H2>
+<input name="name" type = "text" size =35>
+<H2> Nhập tuổi của bạn </H2>
+<input name="tuoi" type = "text" size =35>
+<H2> Nhập chieu cao </H2>
+<input name="chieucao" type="text" size=35>
+<input type="button" value= "check"
+Onclick= "check()">
+</form>
+</body>
+</html>
